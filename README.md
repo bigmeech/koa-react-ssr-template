@@ -5,7 +5,8 @@ The goal of this project is to create a multipage application in react (A larger
 Reasons for doing this
 1. Avoid storing secrets on the client
 2. Avoid exposing critical routing logic on the client. e.g. routing between authenticated and unauthenticated pages
-3. You run much thinner applications at any giving time and not ginormous application
+3. Run much thinner applications at any giving time and not a single ginormous react application
+3. Easy separation of concerns/context
 
 # Technologies
 - React
