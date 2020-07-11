@@ -1,0 +1,50 @@
+{
+  "name": "react-ssr-multipage-template",
+  "version": "1.0.0",
+  "description": "Boilerplate for creating a multiple page react applications",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "start.dev": "NODE_NEV=local nodemon",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "build": "npm run build:server && npm run build:client",
+    "build:client": "parcel build \"src/client/apps/**/*.html\" --out-dir \"src/server/public/\"",
+    "build:server": "tsc --build \"./tsconfig.json\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "larry Eliemenye",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/config": "0.0.36",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.7",
+    "nodemon": "^2.0.4",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "@types/deepmerge": "^2.2.0",
+    "@types/koa": "^2.11.3",
+    "@types/koa-router": "^7.4.1",
+    "@types/node": "^14.0.22",
+    "config": "^3.3.1",
+    "deepmerge": "^4.2.2",
+    "koa": "^2.13.0",
+    "koa-helmet": "^5.2.0",
+    "koa-router": "^9.1.0",
+    "koa-static": "^5.0.0",
+    "nunjucks": "^3.2.1",
+    "pino": "^6.3.2",
+    "pino-pretty": "^4.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
